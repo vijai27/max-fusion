@@ -99,6 +99,20 @@
 - KF16 centering ring + O-ring + clamp → KF16 to CF conical reducer → CF stainless flexible bellows → CF Manual Right Angle Valve → pump
 - Flexible bellows provides vibration isolation from 20 kHz sonifier
 
+**Port 5: Immersion Thermocouple (LOCKED)**
+- Part: P108064 - Electrical Thermocouple Feedthrough, Type K, UHV Rated, 4 pins, CF 1.33"
+- Price: $347.18
+- CF 1.33" flange (compact, fits 130mm face)
+- Type K (chromel/alumel), 4 pins = 2 TC pairs (only 1 pair needed, 2 extra pins available)
+- UHV rated (overkill for rough vacuum, no issue)
+- TC probe wire connects on inside, TC meter connects on outside
+
+**Port 4: PCB Piezotronics 113B03 (separate coaxial feedthrough needed)**
+- Sensor body inside reactor (submerged in oil or gas space)
+- Need CF 1.33" coaxial BNC feedthrough (separate port from TC)
+- Coaxial cable from sensor through feedthrough to charge amplifier outside
+- Search: "CF 1.33 BNC coaxial vacuum feedthrough" (MDC, Kurt Lesker, Nor-Cal)
+
 ### Decisions So Far
 - Design target: custom-machined 6" CF blank top flange, 316L SS
 - All 6 ports go on the top flange only
