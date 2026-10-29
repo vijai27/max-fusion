@@ -107,11 +107,15 @@
 - UHV rated (overkill for rough vacuum, no issue)
 - TC probe wire connects on inside, TC meter connects on outside
 
-**Port 4: PCB Piezotronics 113B03 (separate coaxial feedthrough needed)**
-- Sensor body inside reactor (submerged in oil or gas space)
-- Need CF 1.33" coaxial BNC feedthrough (separate port from TC)
-- Coaxial cable from sensor through feedthrough to charge amplifier outside
-- Search: "CF 1.33 BNC coaxial vacuum feedthrough" (MDC, Kurt Lesker, Nor-Cal)
+**Port 4: PCB Piezotronics 113B03 (LOCKED)**
+- Part: 113100 - Microdot, Grounded Shield, CF 1.33" Flange
+- Price: $156.00
+- Single coaxial contact, grounded shield (reduces noise on charge-output signal)
+- CF 1.33" flange (compact, fits 130mm face)
+- UHV rated 1x10E-10 Torr (overkill for rough vacuum, no issue)
+- Gender: Female (air side) / Male pin (vacuum side)
+- Connection: 10-32 to microdot adapter cable from PCB 113B03 sensor → vacuum side male pin → air side female microdot → charge amplifier
+- NOTE: keep coaxial cable inside reactor as short as possible (charge-output sensor, pC level signal, capacitance sensitive)
 
 ### Decisions So Far
 - Design target: custom-machined 6" CF blank top flange, 316L SS
