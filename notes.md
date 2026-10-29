@@ -83,13 +83,28 @@
 5. Is the existing top flange being replaced, or are we adding to it?
 6. Any constraint on top flange thickness or port spacing?
 
+### Port Attachment Details
+
+**Port 2: Bruker X-Flash 6 SDD**
+- Part: CF to compression port adapter (CF 1.33" one side, knurled compression nut other side)
+- Reference: idealvac.com "ConFlat Flange CF Compression Port 3/4 inch to CF 2 3/4 inch" - same part type, use 1.33" CF version not 2.75" CF (too large for 130mm face)
+- Assembly: machine 1.33" CF port into 6" blank → bolt adapter with copper gasket → slide SDD 20mm nipple through compression nut → tighten knurled nut by hand
+- NOTE: verify SDD nipple OD with Bruker spec (20mm nominal vs 3/4" = 19.05mm compression fitting)
+- Blank port required: 1.33" CF (34mm OD flange, 16mm bore, 4x bolt holes)
+
+**Port 1: KF16 vacuum port**
+- KF16 stub TIG welded to blank face
+- KF16 centering ring + O-ring + clamp → KF16 to CF conical reducer → CF stainless flexible bellows → CF Manual Right Angle Valve → pump
+- Flexible bellows provides vibration isolation from 20 kHz sonifier
+
 ### Decisions So Far
 - Design target: custom-machined 6" CF blank top flange, 316L SS
 - All 6 ports go on the top flange only
-- Bottom flange: blind boss for sonifier, no other ports needed
+- Bottom flange: Continuous Flow Attachment (100-146-171) center through-hole, horn passes through into oil
 - PMT: propose H10682-110 (module), not R928-17 (bare tube)
-- Seal strategy: KF16 for vacuum port, compression fittings for small sensors,
-  O-ring face seal for IR viewport and PMT viewport — to be confirmed in Phase 3
+- Top flange = custom multi-port blank (no off-the-shelf part matches this exact configuration)
+- Buy raw 6" CF blank, machine 6 holes, weld KF16 stub, install fittings/feedthroughs
+- SDD: vertical (pointing straight down), through 1.33" CF port, CF-to-compression adapter seals nipple
 
 ---
 
