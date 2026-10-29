@@ -83,13 +83,36 @@
 5. Is the existing top flange being replaced, or are we adding to it?
 6. Any constraint on top flange thickness or port spacing?
 
+### Port Sizes and Attachment Methods
+
+| # | Instrument | Hole Size | Attachment |
+|---|-----------|-----------|------------|
+| 1 | KF16 vacuum port | 16mm bore | KF16 stub TIG welded on face |
+| 2 | Bruker SDD (20mm nipple) | 21mm bore | Swagelok Ultra-Torr compression gland, nipple passes through |
+| 3 | IR camera viewport | 25-35mm bore | KF25 or CF 2.75" viewport with ZnSe/Ge window |
+| 4 | PCB 113B03 | 12-13mm bore | Panel-mount BNC coaxial vacuum feedthrough, threaded |
+| 5 | Thermocouple | 4-8mm bore | Swagelok Ultra-Torr compression gland, K-type probe passes through |
+| 6 | PMT H10682-110 | 16mm bore | KF16 stub + UV fused silica viewport window |
+
+All 6 ports must fit within 130mm usable face diameter (inside CF knife edge).
+
+### Vacuum Line Routing (KF16 port to pump)
+- KF16 stub (welded on top flange face) → KF16 centering ring + O-ring + clamp
+- KF16 to CF conical reducer (size transition)
+- CF stainless flexible bellows (vibration isolation + misalignment tolerance at 20 kHz)
+- CF Manual Right Angle Valve (isolation valve, already in system)
+- Vacuum pump
+- Note: KF16 flexible hose also works for rough vacuum (1-100 mTorr), CF bellows is what existing system uses
+
 ### Decisions So Far
 - Design target: custom-machined 6" CF blank top flange, 316L SS
 - All 6 ports go on the top flange only
-- Bottom flange: blind boss for sonifier, no other ports needed
+- Bottom flange: Continuous Flow Attachment (100-146-171) center through-hole, horn passes through into oil
 - PMT: propose H10682-110 (module), not R928-17 (bare tube)
-- Seal strategy: KF16 for vacuum port, compression fittings for small sensors,
-  O-ring face seal for IR viewport and PMT viewport — to be confirmed in Phase 3
+- Top flange = custom multi-port blank (no off-the-shelf part matches this exact configuration)
+- Buy raw 6" CF blank, machine 6 holes, weld KF16 stub, install fittings/feedthroughs
+- SDD placement: vertical (pointing straight down), through top face of blank, compression fitting seals
+- Vacuum pump line exits via KF16 stub on side of blank (90 deg), flexible bellows routes to pump
 
 ---
 
