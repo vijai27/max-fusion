@@ -31,14 +31,15 @@
 - Estimate: rough to medium vacuum, 1–100 mTorr operating range
 - O-ring seals (KF, compression fittings) are acceptable for most ports
 
-**Bottom flange (sonifier attachment):**
-- Standard 6" CF full nipple has NO openings in the tube body or flanges
-- Both flanges are blank from the factory — all ports must be machined into the flanges
-- Bottom blank flange is custom machined with a central blind threaded boss for sonifier horn
-- Sonifier horn threads into this blind boss (no through-hole, vacuum integrity preserved)
-- Vibration transfers mechanically through the flange wall into the oil above
-- Branson horn thread spec: check with Dr. Max (likely 3/4"-16 UNF or Branson proprietary)
-- Vacuum connection: goes through the TOP flange (KF16), NOT the bottom
+**Bottom flange (sonifier attachment) — REVISED:**
+- Standard 6" CF full nipple has NO openings from the factory — all ports must be machined
+- Bottom blank flange has a center through-hole sized for the Continuous Flow Attachment (Branson 100-146-171)
+- Assembly: Converter → Horn (1/2" Bio Horn 101-147-037R or 3/4" High-Gain Horn 101-147-035R) → Continuous Flow Attachment → through-hole in bottom CF blank → horn tip submerged in oil
+- Continuous Flow Attachment provides the O-ring/compression seal where horn enters vacuum space
+- Continuous Flow Attachment side ports: likely vacuum connection (pump) and/or oil circulation
+- Horn directly sonicates the mineral oil from below — far more efficient than coupling through solid flange wall
+- Branson Continuous Flow Attachment part: 100-146-171
+- Correct horn choices (labeled "1" in catalog): 101-147-037R or 101-147-035R
 
 **Top flange (what we are designing):**
 - Existing system already has a welded cluster flange on top (visible in photos)
