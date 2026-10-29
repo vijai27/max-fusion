@@ -94,6 +94,22 @@
 - IMPORTANT: SDD nipple tip goes INSIDE the vacuum space by design. Be (Beryllium) window at nipple tip is the vacuum boundary, not the compression fitting. Soft X-rays are absorbed by air in millimeters - nipple must penetrate inside so Be window is as close to plasma source as possible. SDD electronics body stays outside in air.
 - Camera CANNOT go inside: oil would destroy electronics, standard cameras are not vacuum-compatible, no internal vacuum seal. SDD is purpose-built for vacuum penetration; cameras are not.
 
+**Port 6: Hamamatsu H10682-110 PMT (LOCKED)**
+- PMT stays OUTSIDE vacuum, looks through viewport window
+- Part 1: 1.33" CF viewport with UV fused silica window (passes 230-700nm, matches H10682-110 range)
+- Part 2: Off-the-shelf PMT housing/sleeve (Hamamatsu accessory) - light-tight enclosure, sized for H10682-110
+- Part 3: H10682-110 module slides into sleeve, photocathode face pressed against viewport window
+- No custom machining needed - all off the shelf
+- Electrical: +5V power in, TTL pulse out to photon counter
+- H10682-110 chosen over R928-17: self-contained module vs bare tube needing >1kV HV supply + dynode chain
+
+**Port 3: IR Camera viewport (TBD)**
+- Camera model not specified (TBD per problem statement)
+- Port machined into blank now, capped with CF blank flange until camera is selected
+- Window material TBD: ZnSe/Ge for LWIR thermal, UV fused silica for visible
+- Open question for Dr. Max: what is the camera intended to observe? (thermal surface mapping vs plasma dynamics)
+- PMT already handles optical emission monitoring - IR camera serves a different purpose
+
 **Port 1: KF16 vacuum port**
 - KF16 stub TIG welded to blank face
 - KF16 centering ring + O-ring + clamp → KF16 to CF conical reducer → CF stainless flexible bellows → CF Manual Right Angle Valve → pump
