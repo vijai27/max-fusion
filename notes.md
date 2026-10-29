@@ -91,6 +91,8 @@
 - Assembly: machine 1.33" CF port into 6" blank → bolt adapter with copper gasket → slide SDD 20mm nipple through compression nut → tighten knurled nut by hand
 - NOTE: verify SDD nipple OD with Bruker spec (20mm nominal vs 3/4" = 19.05mm compression fitting)
 - Blank port required: 1.33" CF (34mm OD flange, 16mm bore, 4x bolt holes)
+- IMPORTANT: SDD nipple tip goes INSIDE the vacuum space by design. Be (Beryllium) window at nipple tip is the vacuum boundary, not the compression fitting. Soft X-rays are absorbed by air in millimeters - nipple must penetrate inside so Be window is as close to plasma source as possible. SDD electronics body stays outside in air.
+- Camera CANNOT go inside: oil would destroy electronics, standard cameras are not vacuum-compatible, no internal vacuum seal. SDD is purpose-built for vacuum penetration; cameras are not.
 
 **Port 1: KF16 vacuum port**
 - KF16 stub TIG welded to blank face
